@@ -52,7 +52,7 @@
         <section class="wrapper">
             <div class="w-[100%] h-[20vh] text-center">
                 <h4 class="text-[#FF6868] text-[12px] font-semibold pt-20">CUSTOMER FAVORITES</h4>
-                <H2 class="font-bold text-[28px]">Popular Catagories</H2>
+                <H2 class="font-bold text-[28px]">Popular Categories</H2>
             </div>
             <div class="w-[100%] h-[40vh] pt-10 flex justify-around">
                 {% for category in categories %}
@@ -108,9 +108,9 @@
             <div class="flex justify-around">
                 {% for dish in menu %}
                 <div class="text-start w-[30%] shadow-2xl  rounded-3xl h-[44vh]">
-                    <img class="w-[60%] pt-4 ml-[20%] " src="{{menu.image.url}}" alt="img">
-                    <h5 class="ml-6 mt-2 font-bold text-[19px]">{{menu.name}}</h5>
-                    <p class="ml-6 font-semibold text-[13px] opacity-85">{{menu.discrimption}}</p>
+                    <img class="w-[60%] pt-4 ml-[20%] " src="{{dish.image.url}}" alt="img">
+                    <h5 class="ml-6 mt-2 font-bold text-[19px]">{{dish.name}}</h5>
+                    <p class="ml-6 font-semibold text-[13px] opacity-85">{{dish.description}}</p>
                 </div>
                 {% endfor %}
 

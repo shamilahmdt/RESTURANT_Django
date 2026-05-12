@@ -8,5 +8,5 @@ class Category(models.Model):
 
 class Menu(models.Model):
     name = models.CharField(max_length=255)
-    discrimption = models.TextField()
+    description = models.TextField()
     image = models.ImageField(upload_to='menu')
